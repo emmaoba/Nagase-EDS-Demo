@@ -2,8 +2,9 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+- Preview: https://main--nagase-eds-demo--emmaoba.aem.page/
+- Live: https://main--nagase-eds-demo--emmaoba.aem.live/
+- Admin Tools: https://tools.aem.live/bot/setup?user=&site=nagase-eds-demo&url=https%3A%2F%2Fcontent.da.live%2Femmaoba%2Fnagase-eds-demo%2F&org=emmaoba
 
 ## Documentation
 
