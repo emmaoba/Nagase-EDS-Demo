@@ -13,13 +13,12 @@ footer .footer .addr {
   background-position: top;
   margin-top: -1px;
   padding-top: 60px;
-  padding-bottom: 32px;
 }
 
 footer .footer .addr .box {
   max-width: 980px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 32px 24px;
 }
 
 /* 会社名 */
