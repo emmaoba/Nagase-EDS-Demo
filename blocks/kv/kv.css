@@ -1,0 +1,125 @@
+/* 
+ * KVブロック（キービジュアル）
+ * 参照: https://www.nagase.co.jp/med-eq/index.html
+ * 
+ * レスポンシブブレークポイント:
+ * - デスクトップ: 769px以上
+ * - モバイル: 768px以下
+ */
+
+/* KVラッパー - EDSが自動生成 */
+.kv-wrapper {
+  height: 400px;
+  background-image: url(/assets/kv_bg.jpg);
+  background-repeat: repeat-x;
+  background-position: center;
+}
+
+/* KVメインコンテナ */
+.kv {
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .kv-wrapper {
+    height: auto;
+    background-repeat: repeat;
+    background-position: center 0;
+  }
+  
+  .kv {
+    height: auto;
+  }
+}
+
+/* KV内側コンテナ */
+.kv__inner {
+  max-width: 980px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 769px) {
+  .kv__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .kv__inner {
+    padding: 8vw 0;
+    background-repeat: repeat;
+    background-position: center 0;
+  }
+}
+
+/* ロゴエリア */
+.kv__logo {
+  /* デスクトップではサイズ指定なし（画像の自然なサイズを使用） */
+}
+
+@media only screen and (max-width: 768px) {
+  .kv__logo {
+    width: 53.33333vw;
+    margin: 0 auto;
+  }
+  
+  .kv__logo img {
+    width: 100%;
+  }
+}
+
+/* コピーブロック */
+.kv__copy-block {
+  text-align: center;
+}
+
+@media only screen and (min-width: 769px) {
+  .kv__copy-block {
+    margin-left: 40px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .kv__copy-block {
+    padding: 0 8vw;
+  }
+}
+
+/* コピー画像（IMAGING-INTELLIGENCE） */
+.kv__copy-block .copy {
+  margin: 0;
+}
+
+.kv__copy-block .copy img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* メインテキスト */
+.kv__copy-block .txt {
+  margin-top: 30px;
+  line-height: 2.8;
+}
+
+@media only screen and (max-width: 768px) {
+  .kv__copy-block .txt {
+    margin-top: 2.66667vw;
+    font-size: 3.73333vw;
+    line-height: 1.8;
+  }
+}
+
+/* SPクラス: モバイルで改行 */
+@media only screen and (min-width: 769px) {
+  .kv__copy-block .txt .SP {
+    display: none;
+  }
+}
+
