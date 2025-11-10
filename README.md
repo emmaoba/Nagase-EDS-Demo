@@ -33,3 +33,13 @@ npm run lint
 1. Install the [AEM CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/aem-cli`
 1. Start AEM Proxy: `aem up` (opens your browser at `http://localhost:3000`)
 1. Open the `{repo}` directory in your favorite IDE and start coding :)
+
+## Performance Comparison
+
+### EDS Site
+<img width="3840" height="2080" alt="image" src="https://github.com/user-attachments/assets/d83e2766-bbea-4c11-8770-30fad942cbb2" />
+
+### Live Site
+<img width="3840" height="2080" alt="image" src="https://github.com/user-attachments/assets/8f1b84fc-7ffc-404c-b2b5-cc50e4e8c725" />
+
+
