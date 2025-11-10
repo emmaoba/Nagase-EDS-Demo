@@ -1,0 +1,130 @@
+/*
+ * Medicalブロック - 製品情報リンクセクション
+ * 参照: https://www.nagase.co.jp/med-eq/index.html
+ * 
+ * レスポンシブブレークポイント:
+ * - デスクトップ: 769px以上
+ * - タブレット: 769px-979px
+ * - モバイル: 768px以下
+ */
+
+/* メインコンテンツエリア */
+.medical {
+  padding: 45px 0 65px;
+}
+
+@media only screen and (max-width: 768px) {
+  .medical-wrapper {
+    padding: 8vw 8vw;
+  }
+}
+
+.medical-container {
+  /* EDSが自動生成するコンテナ */
+}
+
+.medical a {
+  color: #000;
+  text-decoration: none;
+}
+
+.medical img {
+  vertical-align: top;
+}
+
+/* to-btnコンテナ */
+.to-btn {
+  max-width: 980px;
+  margin: 0 auto;
+  border: 10px solid #ccc;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 979px) and (min-width: 769px) {
+  .to-btn {
+    border-width: 1.02041vw;
+  }
+}
+
+/* リンク要素 - Flexboxレイアウト */
+@media only screen and (min-width: 769px) {
+  .to-btn a {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+}
+
+/* ホバー効果 */
+.to-btn a.hv-o {
+  display: flex;
+  transition: opacity 0.5s;
+}
+
+.to-btn a.hv-o:hover {
+  opacity: 0.7;
+}
+
+/* 画像エリア */
+.to-btn a .img {
+  width: 480px;
+}
+
+@media only screen and (max-width: 979px) and (min-width: 769px) {
+  .to-btn a .img {
+    width: 48.97959vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .to-btn a .img {
+    width: 100%;
+  }
+}
+
+.to-btn a .img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* テキストブロック */
+.to-btn a .txt-block {
+  width: 480px;
+  padding: 35px 28px 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 979px) and (min-width: 769px) {
+  .to-btn a .txt-block {
+    width: 48.97959vw;
+    padding: 3.57143vw 2.85714vw 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .to-btn a .txt-block {
+    width: 100%;
+    padding: 5.33333vw;
+  }
+}
+
+/* タイトル */
+.to-btn a .txt-block .ttl {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding-left: 10px;
+  border-left: 5px solid #ea5413;
+  line-height: 1.4;
+}
+
+/* 説明文 */
+.to-btn a .txt-block .des {
+  margin-bottom: 0;
+  line-height: 1.0;
+  font-size: 16px;
+}
+

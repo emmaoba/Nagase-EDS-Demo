@@ -1,20 +1,152 @@
+/*
+ * Footerブロック
+ * 参照: https://www.nagase.co.jp/med-eq/index.html
+ */
+
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background: #ddd;
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+/* アドレスセクション（会社情報） */
+footer .footer .addr {
+  background: url(/assets/bg-footer.png) repeat-x;
+  background-position: top;
+  margin-top: -1px;
+  padding-top: 60px;
 }
 
-footer .footer p {
+footer .footer .addr .box {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* 会社名 */
+footer .footer .addr h3 {
+  color: #333;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 8px;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+footer .footer .addr h3 a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 住所 */
+footer .footer .addr p {
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #333;
+}
+
+/* ナビゲーションとコピーライトセクション */
+footer .footer > div:last-child {
+  background: #a0a0a0;
+  color: #fff;
+  overflow: auto;
+}
+
+footer .footer > div:last-child .box {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* ナビゲーションリスト */
+footer .footer nav ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+footer .footer nav li {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.8;
+  display: inline;
+}
+
+/* CSSでパイプを出力 */
+footer .footer nav li::before {
+  content: '|';
+  color: #fff;
+  margin: 0 8px;
+}
+
+footer .footer nav li:last-child::after {
+  content: '|';
+  color: #fff;
+  margin: 0 0 0 8px;
+}
+
+footer .footer nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer nav a:hover {
+  text-decoration: underline;
+}
+
+/* コピーライト */
+footer .footer > div:last-child p {
+  font-size: 11px;
+  margin: 8px 0 0 0;
+  color: #fff;
+}
+
+/* モバイル対応 */
+@media only screen and (max-width: 768px) {
+  footer .footer .addr {
+    padding-top: 40px;
+    padding-bottom: 16px;
+  }
+  
+  footer .footer .addr .box {
+    padding: 0 16px;
+  }
+  
+  footer .footer .addr h3 {
+    font-size: 13px;
+  }
+  
+  footer .footer .addr p {
+    font-size: 12px;
+  }
+  
+  footer .footer > div:last-child .box {
+    padding: 16px;
+  }
+  
+  /* モバイルでは縦並び */
+  footer .footer nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  footer .footer nav li {
+    font-size: 14px;
+    display: block;
+    margin: 4px 0;
+  }
+  
+  /* モバイルではパイプを非表示 */
+  footer .footer nav li::before,
+  footer .footer nav li:last-child::after {
+    display: none;
+  }
+  
+  footer .footer > div:last-child p {
+    font-size: 10px;
+    margin-top: 12px;
   }
 }

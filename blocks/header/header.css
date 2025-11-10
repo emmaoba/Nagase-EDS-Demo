@@ -1,3 +1,15 @@
+/*
+ * Header Font Configuration
+ * 参照: https://www.nagase.co.jp/med-eq/index.html
+ * 
+ * フォント設定（参照サイトより）:
+ * - Font Family: arial, sans-serif
+ * - Navigation Items Font Size: 14px
+ * - Body Font Size: 16px (参考)
+ * - Color: #333
+ * - Font Weight: デフォルト（明示的指定なし）
+ */
+
 /* header and nav layout */
 header .nav-wrapper {
   background-color: var(--background-color);
@@ -18,7 +30,8 @@ header nav {
   max-width: 1248px;
   height: var(--nav-height);
   padding: 0 24px;
-  font-family: var(--body-font-family);
+  /* 参照サイトと同じフォント設定 */
+  font-family: arial, sans-serif;
 }
 
 header nav[aria-expanded='true'] {
@@ -35,7 +48,7 @@ header nav[aria-expanded='true'] {
     display: flex;
     justify-content: space-between;
     gap: 0 32px;
-    max-width: 1264px;
+    max-width: 980px;
     padding: 0 32px;
   }
 
@@ -149,6 +162,11 @@ header nav .nav-brand img {
   height: auto;
 }
 
+header nav .nav-brand a {
+  color: #000;
+  text-decoration: none;
+}
+
 /* sections */
 header nav .nav-sections {
   grid-area: sections;
@@ -166,19 +184,21 @@ header nav[aria-expanded='true'] .nav-sections {
 header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
-  font-size: var(--body-font-size-s);
 }
 
 header nav .nav-sections ul > li {
-  font-weight: 500;
+  /* 参照サイトと同じナビゲーションフォント設定 */
+  font-size: 14px;
+}
+
+header nav .nav-sections ul > li > a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 800;
 }
 
 header nav .nav-sections ul > li > ul {
   margin-top: 0;
-}
-
-header nav .nav-sections ul > li > ul > li {
-  font-weight: 400;
 }
 
 @media (width >= 900px) {
