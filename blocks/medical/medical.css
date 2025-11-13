@@ -19,9 +19,7 @@
   }
 }
 
-.medical-container {
-  /* EDSが自動生成するコンテナ */
-}
+/* .medical-container - EDSが自動生成するコンテナ */
 
 .medical a {
   color: #000;
@@ -58,8 +56,13 @@
 
 /* ホバー効果 */
 .to-btn a.hv-o {
-  display: flex;
   transition: opacity 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+  .to-btn a.hv-o {
+    display: block;
+  }
 }
 
 .to-btn a.hv-o:hover {
@@ -124,7 +127,7 @@
 /* 説明文 */
 .to-btn a .txt-block .des {
   margin-bottom: 0;
-  line-height: 1.0;
+  line-height: 1.8;
   font-size: 16px;
 }
 

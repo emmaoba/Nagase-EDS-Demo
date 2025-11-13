@@ -108,11 +108,10 @@ footer .footer > div:last-child p {
 @media only screen and (max-width: 768px) {
   footer .footer .addr {
     padding-top: 40px;
-    padding-bottom: 16px;
   }
   
   footer .footer .addr .box {
-    padding: 0 16px;
+    padding: 32px 16px;
   }
   
   footer .footer .addr h3 {
